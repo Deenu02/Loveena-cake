@@ -1,6 +1,6 @@
 .menu-page {
     padding: 2rem;
-    background: #fdf8f3;
+    background: #e7d5e0;
     min-height: 100vh;
 }
 
@@ -47,7 +47,7 @@
     display: inline-block;
     background: #faece7;
     color: #712B13;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
     padding: 3px 10px;
     border-radius: 50px;
@@ -57,13 +57,13 @@
 .cake-name {
     font-size: 16px;
     font-weight: 600;
-    color: #2c1a0e;
+    color: #ed06a8ec;
     margin: 0 0 5px;
 }
 
 .cake-desc {
     font-size: 13px;
-    color: #9e7d6a;
+    color: #712B13;
     line-height: 1.5;
     margin: 0 0 12px;
 }
@@ -77,11 +77,11 @@
 .cake-price {
     font-size: 17px;
     font-weight: 600;
-    color: #c9622f;
+    color: #712B13;
 }
 
 .order-btn {
-    background: #faece7;
+    background: #EC4899;
     color: #712B13;
     border: none;
     padding: 7px 16px;
@@ -92,5 +92,5 @@
 }
 
 .order-btn:hover {
-    background: #f5c4b3;
+    background: #D81B60;
 }
