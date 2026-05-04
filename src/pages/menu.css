@@ -1,0 +1,96 @@
+.menu-page {
+    padding: 2rem;
+    background: #fdf8f3;
+    min-height: 100vh;
+}
+
+.menu-title {
+    font-size: 28px;
+    color: #2c1a0e;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cake Card */
+.cake-card {
+    background: #fff;
+    border: 0.5px solid #e8ddd4;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cake-card:hover {
+    transform: translateY(-4px);
+}
+
+.cake-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cake-body {
+    padding: 14px;
+}
+
+.cake-category {
+    display: inline-block;
+    background: #faece7;
+    color: #712B13;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.cake-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c1a0e;
+    margin: 0 0 5px;
+}
+
+.cake-desc {
+    font-size: 13px;
+    color: #9e7d6a;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.cake-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cake-price {
+    font-size: 17px;
+    font-weight: 600;
+    color: #c9622f;
+}
+
+.order-btn {
+    background: #faece7;
+    color: #712B13;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #f5c4b3;
+}
