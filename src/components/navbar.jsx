@@ -33,10 +33,13 @@ function Navbar() {
                 </li>
             </ul>
 
-            {/* CTA Button */}
-            <button className="bg-pink-500 text-white px-6 py-2 rounded-full font-medium hover:bg-pink-600">
+            {/* CTA Button - Changed from <button> to <Link> */}
+            <Link
+                to="/orderDetails"
+                className="bg-pink-500 text-white px-6 py-2 rounded-full font-medium hover:bg-pink-600 cursor-pointer transition duration-200"
+            >
                 Order Now
-            </button>
+            </Link>
 
         </nav>
     )

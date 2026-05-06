@@ -1,7 +1,19 @@
+// Add this import at the top
+import { useNavigate } from 'react-router-dom';
+
 function CakeCard({ name, category, description, price, image }) {
+    const navigate = useNavigate();
+
+    // Convert cake name to slug format matching OrderPage values
+    // e.g., "Velvet Dream" -> "VelvetDream"
+    const cakeSlug = name.replace(/\s+/g, '');
+
+    const handleOrderClick = () => {
+        navigate(`/orderDetails?cake=${cakeSlug}`);
+    };
+
     return (
         <div className="bg-white border border-[#e8ddd4] rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1">
-
             {/* Image */}
             <div>
                 <img
@@ -13,7 +25,6 @@ function CakeCard({ name, category, description, price, image }) {
 
             {/* Card Body */}
             <div className="p-4">
-
                 {/* Category pill */}
                 <span className="inline-block bg-[#faece7] text-[#712B13] text-[13px] font-medium px-3 py-1 rounded-full mb-2">
                     {category}
@@ -32,13 +43,16 @@ function CakeCard({ name, category, description, price, image }) {
                 {/* Footer */}
                 <div className="flex justify-between items-center">
                     <span className="text-[17px] font-semibold text-[#712B13]">
-                        ${price}
+                        Rs.{price}
                     </span>
-                    <button className="bg-[#EC4899] text-[#712B13] border-none px-4 py-2 rounded-full text-[13px] font-medium cursor-pointer hover:bg-[#D81B60]">
+                    {/* Updated Button with navigation */}
+                    <button
+                        onClick={handleOrderClick}
+                        className="bg-[#EC4899] text-[#712B13] border-none px-4 py-2 rounded-full text-[13px] font-medium cursor-pointer hover:bg-[#D81B60]"
+                    >
                         Order Now
                     </button>
                 </div>
-
             </div>
         </div>
     )

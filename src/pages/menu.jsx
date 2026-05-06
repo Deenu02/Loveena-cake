@@ -10,15 +10,15 @@ import cupcake from '../assets/cupcake.jpg'
 import eggless from '../assets/eggless.jpg'
 
 const cakes = [
-    { id: 1, name: "Velvet Dream", category: "Birthday", description: "Red velvet layers with cream cheese frosting", price: 48, image: birthday },
-    { id: 2, name: "Pearl Elegance", category: "Wedding", description: "Vanilla sponge with white fondant and pearls", price: 120, image: wedding },
-    { id: 3, name: "Velvet Dream", category: "Anniversary", description: "Red velvet layers with cream cheese frosting", price: 48, image: anniversary },
-    { id: 4, name: "Velvet Dream", category: "Gender Reveal", description: "Red velvet layers with cream cheese frosting", price: 48, image: gender },
-    { id: 5, name: "Velvet Dream", category: "Graduation", description: "Red velvet layers with cream cheese frosting", price: 48, image: graduation },
-    { id: 6, name: "Velvet Dream", category: "Engagement", description: "Red velvet layers with cream cheese frosting", price: 48, image: engagement },
-    { id: 7, name: "Velvet Dream", category: "Baby Shower", description: "Red velvet layers with cream cheese frosting", price: 48, image: babyshower },
-    { id: 8, name: "Velvet Dream", category: "Baby Shower", description: "Red velvet layers with cream cheese frosting", price: 48, image: cupcake },
-    { id: 9, name: "Velvet Dream", category: "Eggless", description: "Red velvet layers with cream cheese frosting", price: 48, image: eggless },
+    { id: 1, name: "Velvet Dream", category: "Birthday", description: "Sweet, soft, and party-perfect.", price: 5800, image: birthday },
+    { id: 2, name: "Pearl Elegance", category: "Wedding", description: "Pure elegance in every bite.", price: 15500, image: wedding },
+    { id: 3, name: "Choco Love", category: "Anniversary", description: "Rich chocolate & sweet move.", price: 12800, image: anniversary },
+    { id: 4, name: "Little Surprise", category: "Gender Reveal", description: "A sweet secret inside.", price: 9900, image: gender },
+    { id: 5, name: "Smart Treat", category: "Graduation", description: "Celebrate success deliciously.", price: 4800, image: graduation },
+    { id: 6, name: "Forever Sweet", category: "Engagement", description: "Made for love stories.", price: 10200, image: engagement },
+    { id: 7, name: "Tiny Joy", category: "Baby Shower", description: "Soft, sweet, and adorable.", price: 6700, image: babyshower },
+    { id: 8, name: "Sugar Swirls", category: "Cup Cake", description: "Mini bites of happiness.", price: 150, image: cupcake },
+    { id: 9, name: "Velvet Cocoa", category: "Eggless", description: "Rich taste, no eggs needed.", price: 3800, image: eggless },
 ];
 
 function Menu() {
