@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 function Home() {
+    const navigate = useNavigate();
+
     return (
         <div className="w-full h-screen bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
 
@@ -18,10 +22,14 @@ function Home() {
                     Custom cakes for every special occasion
                 </p>
                 <div className="flex gap-4 justify-center">
-                    <button className="bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-pink-600">
+                    <button
+                        onClick={() => navigate('/menu')}
+                        className="bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-pink-600">
                         Browse Menu
                     </button>
-                    <button className="bg-white text-pink-500 px-8 py-3 rounded-full text-lg font-medium hover:bg-pink-50">
+                    <button
+                        onClick={() => navigate('/orderDetails')}
+                        className="bg-white text-pink-500 px-8 py-3 rounded-full text-lg font-medium hover:bg-pink-50">
                         Custom Order
                     </button>
                 </div>
