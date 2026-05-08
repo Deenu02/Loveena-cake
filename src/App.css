@@ -72,3 +72,28 @@
 .order-btn:hover {
   background: #f5c4b3;
 }
+
+/* Fix the full app height */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Navbar stays fixed at top */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Content area scrolls independently */
+.page-content {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 70px;
+  /* adjust based on your navbar height */
+}
